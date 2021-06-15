@@ -167,7 +167,7 @@ export default function Home() {
           </Row>
         </Container>
       </div>
-      <Container className="margem-s">
+      <Container className="margem-cards">
         <Row>
           <Col sm="3" md="3" lg="3" className="d-none d-md-block pt-5"
             style={{ paddingLeft: ".25rem", paddingRight: ".25rem" }}>

@@ -195,6 +195,9 @@ a:hover {
   .margem-s {
     margin-top: 80px;
   }
+  .margem-cards {
+    margin-top: 80px;
+  }
   .carrousel-fotos {
     margin-top: 80px;
     max-width: 636px;
@@ -214,6 +217,9 @@ a:hover {
     padding-left: 248px;
   }
   .margem-s {
+    margin-top: 80px;
+  }
+  .margem-cards {
     margin-top: 80px;
   }
   .carrousel-fotos {
@@ -237,6 +243,9 @@ a:hover {
   .margem-s {
     margin-top: 80px;
   }
+  .margem-cards {
+    margin-top: 80px;
+  }
   .carrousel-fotos {
     margin-top: 80px;
     max-width: 386px;
@@ -253,5 +262,8 @@ a:hover {
   }
   .margem-s {
     margin-top: 134px;
+  }
+  .margem-cards {
+    margin-top: 16px;
   }
 }
