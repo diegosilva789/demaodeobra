@@ -1,0 +1,16 @@
+insert into categoria(cat_descricao) values('Arquitetos');
+insert into categoria(cat_descricao) values('Designers de Interiores');
+insert into categoria(cat_descricao) values('Engenheiros');
+insert into categoria(cat_descricao) values('Pedreiros');
+insert into categoria(cat_descricao) values('Pintores');
+insert into categoria(cat_descricao) values('Gesseiros');
+insert into categoria(cat_descricao) values('Eletricistas');
+insert into categoria(cat_descricao) values('Encanadores');
+insert into categoria(cat_descricao) values('Vitrinistas');
+insert into categoria(cat_descricao) values('Soldadores');
+insert into categoria(cat_descricao) values('Montadores');
+insert into categoria(cat_descricao) values('Organizadores');
+insert into categoria(cat_descricao) values('Marceneiros');
+insert into categoria(cat_descricao) values('Serralheiros');
+insert into categoria(cat_descricao) values('Profissionais de Limpeza');
+insert into categoria(cat_descricao) values('Outros');
