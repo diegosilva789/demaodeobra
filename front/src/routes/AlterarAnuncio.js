@@ -32,7 +32,8 @@ export default function CadastrarAnuncio() {
   const [desabilitarValor, setDesabilitarValor] = useState(true)
   const [precoValor, setPrecoValor] = useState("")
   const [precoTipo, setPrecoTipo] = useState("")
-  const [definir, setDefinir] = useState(false)
+  const [estadoNegociar, setEstadoNegociar] = useState(false)
+  const [estadoDefinir, setEstadoDefinir] = useState(false)
 
   let history = useHistory();
 
@@ -63,10 +64,16 @@ export default function CadastrarAnuncio() {
   }, [uf]);
 
   useEffect(() => {
-    if (comValor === "Negociável")
+    if (comValor === "Negociável") {
       setDesabilitarValor(true)
-    if (comValor === "Definir")
+      setEstadoNegociar(true)
+      setEstadoDefinir(false)
+    }
+    if (comValor === "Definir") {
       setDesabilitarValor(false)
+      setEstadoNegociar(false)
+      setEstadoDefinir(true)
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [comValor]);
 
@@ -91,7 +98,7 @@ export default function CadastrarAnuncio() {
           }
         })
         if (r.data[0].anu_preco_valor) {
-          setDefinir(true)
+          setEstadoDefinir(true)
           setPrecoValor(r.data[0].anu_preco_valor)
           setPrecoTipo(r.data[0].anu_preco_tipo)
           setDesabilitarValor(false)
@@ -312,13 +319,13 @@ export default function CadastrarAnuncio() {
                   <Row className="ps-5">
                     <FormGroup check>
                       <Label check>
-                        <Input type="radio" value="Negociável" onChange={(e) => setComValor(e.target.value)} />{' '}
+                        <Input type="radio" value="Negociável" checked={estadoNegociar} onChange={(e) => setComValor(e.target.value)} />{' '}
                         Negociável
                       </Label>
                     </FormGroup>
                     <FormGroup check>
                       <Label check>
-                        <Input type="radio" value="Definir" checked={definir} onChange={(e) => setComValor(e.target.value)} />{' '}
+                        <Input type="radio" value="Definir" checked={estadoDefinir} onChange={(e) => setComValor(e.target.value)} />{' '}
                         Definir
                       </Label>
                     </FormGroup>
