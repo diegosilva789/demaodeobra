@@ -52,7 +52,8 @@ Ou o próprio Heroku Postgres: https://heroku.com/
 
 ### Banco de dados
 
-Execute o arquivo **sql_2021-06-15.sql** disponível na pasta docs para a crição das tabelas necessárias.
+Execute o arquivo **sql_2021-06-15.sql** disponível na pasta docs para a crição das tabelas necessárias.  
+Execute o arquivo **categorias.sql** disponível na pasta docs para inserir as categorias de anúncios.  
 
 
 ### Aplicação back
